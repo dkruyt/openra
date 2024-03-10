@@ -1,4 +1,9 @@
-[![Check for new OpenRA release and build docker image](https://github.com/dkruyt/openra/actions/workflows/main.yml/badge.svg)](https://github.com/dkruyt/openra/actions/workflows/main.yml)
+[![Check for new OpenRA release and build docker image](https://github.com/dkruyt/openra/actions/workflows/main.yml/badge.svg)](https://github.com/dkruyt/openra/actions/workflows/main.yml) [![1] ![2]](https://github.com/dkruyt/openra/pkgs/container/openra)
+
+https://ghcr-badge.egpl.dev/dkruyt/openra/size
+
+https://ghcr-badge.egpl.dev/dkruyt/openra/latest_tag?trim=major&label=latest
+
 
 # 🎮 OpenRA Dedicated Server Docker Image
 
@@ -45,4 +50,6 @@ Refer the Docker Compose file and OpenRA documentation for more details on what 
 ## 👥 Contributing
 
 Feel free to fork this project, submit PRs or issues, or ask any question about the project.
-```
+
+[1]: <https://ghcr-badge.egpl.dev/dkruyt/openra/latest_tag?trim=major&label=latest>
+[2]: <https://ghcr-badge.egpl.dev/dkruyt/openra/size>
