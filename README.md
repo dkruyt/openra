@@ -21,7 +21,7 @@ To start the OpenRA server, you can use Docker or Docker Compose.
 __Docker:__
 
 ```sh
-docker run -d -p 1234:1234 -v ./openra_data:/home/openra/.openra dkruyt/openra:tag
+docker run -d -p 1234:1234 -v ./openra_data:/home/openra/.openra ghcr.io/dkruyt/openra:latest
 ```
 
 Replace `tag` with the version you want to use.
