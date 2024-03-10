@@ -24,7 +24,7 @@ __Docker:__
 docker run -d -p 1234:1234 -v ./openra_data:/home/openra/.openra ghcr.io/dkruyt/openra:latest
 ```
 
-Replace `tag` with the version you want to use.
+Replace `latest` with the version you want to use if not latest.
 
 __Docker Compose:__
 
