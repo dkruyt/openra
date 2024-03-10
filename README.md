@@ -1,3 +1,5 @@
+[![Check for new OpenRA release and build docker image](https://github.com/dkruyt/openra/actions/workflows/main.yml/badge.svg)](https://github.com/dkruyt/openra/actions/workflows/main.yml)
+
 # 🎮 OpenRA Dedicated Server Docker Image
 
 This repository contains the Dockerfile and associated resources needed to build a Docker image for OpenRA, a real-time strategy game engine.
