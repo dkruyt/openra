@@ -1,0 +1,27 @@
+iversion: '3.8'
+services:
+  openra-server:
+    image: dkruyt/openra:latest
+    #build: .
+    environment:
+      Name: "Dedicated Server"
+      Mod: "ra"
+      Map: ""
+      ListenPort: "1234"
+      AdvertiseOnline: "True"
+      Password: ""
+      RecordReplays: "False"
+      RequireAuthentication: "False"
+      ProfileIDBlacklist: ""
+      ProfileIDWhitelist: ""
+      EnableSingleplayer: "False"
+      EnableSyncReports: "False"
+      EnableGeoIP: "True"
+      EnableLintChecks: "True"
+      ShareAnonymizedIPs: "True"
+      FloodLimitJoinCooldown: "5000"
+      SupportDir: ""
+    ports:
+      - "1234:1234"
+    volumes:
+      - "./openra_data:/home/openra/.openra"
