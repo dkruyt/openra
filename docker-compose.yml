@@ -2,6 +2,7 @@ iversion: '3.8'
 services:
   openra-server:
     image: dkruyt/openra:latest
+    user: "1000:1000"  # UID:GID
     #build: .
     environment:
       Name: "Dedicated Server"
@@ -24,4 +25,7 @@ services:
     ports:
       - "1234:1234"
     volumes:
-      - "./openra_data:/home/openra/.openra"
+      - "openra_data:/home/openra/.openra"
+
+volumes:
+  openra_data:
