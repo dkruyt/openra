@@ -41,7 +41,7 @@ You can modify server settings such as the server name, mod, listen port, extern
 The `environment` section in `docker-compose.yml` allows you to declare environment variables, which are available to your code inside the Docker container. Here is what each of them represents:
 
 - `Name`: This will set the `Name` that the dedicated server reports.
-- `Mod`: This is to choose the game modification for your OpenRA dedicated server, the default is `ra` which stands for Red Alert.
+- `Mod`: Mod to use for your server (e.g., "ra" for Red Alert, "cnc" for Tiberian Dawn, "d2k" for Dune 2000)
 - `Map`: Identifier of the map to be hosted by the dedicated server. If blank, a random map will be selected.
 - `ListenPort`: It's the port that the server listens on for client connections.
 - `AdvertiseOnline`: Defines whether the server should be advertised online. If set to `True`, it will be visible on the public server list.
