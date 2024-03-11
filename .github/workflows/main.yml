@@ -23,7 +23,7 @@ jobs:
           echo "OPENRA_RELEASE_VERSION=${{ github.event.inputs.version }}" >> $GITHUB_ENV
         else
           # Your current code to retrieve the latest version
-          OPENRA_RELEASE_VERSION=$(curl --silent "https://api.github.com/repos/OpenRA/OpenRA/releases" | grep '"tag_name":' | grep 'release-' | sed -E 's/.*"([^"]+)".*/\1/' | head -n 1)
+          OPENRA_RELEASE_VERSION=$(curl --silent "https://api.github.com/repos/OpenRA/OpenRA/releases" | grep '"tag_name":' | grep 'release-' | sed -E 's/.*"([^"]+)".*/\1/' | cut -d'-' -f2- | head -n 1)
           echo "OPENRA_RELEASE_VERSION=$OPENRA_RELEASE_VERSION" >> $GITHUB_ENV
         fi
        
