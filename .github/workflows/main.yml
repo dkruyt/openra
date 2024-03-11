@@ -1,7 +1,7 @@
 name: Check for new OpenRA release and build docker image
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight
+    - cron: '0 22 * * *' # Runs every day at 22:00
   workflow_dispatch:
     inputs:
       version:
