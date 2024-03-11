@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   openra-server:
-    image: dkruyt/openra:latest
+    image: ghcr.io/dkruyt/openra:latest
     #build: .
     environment:
       Name: "Dedicated Server"
