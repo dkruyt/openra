@@ -1,8 +1,10 @@
 version: '3.8'
 services:
   openra-server:
-    image: ghcr.io/dkruyt/openra:latest
-    #build: .
+    #image: ghcr.io/dkruyt/openra:latest
+    image: openra
+    user: "1000:1000"  # UID:GID
+    build: .
     environment:
       Name: "Dedicated Server"
       Mod: "ra"
@@ -24,4 +26,7 @@ services:
     ports:
       - "1234:1234"
     volumes:
-      - "./openra_data:/home/openra/.openra"
+      - "openra_data:/home/openra/.openra"
+
+volumes:
+  openra_data:
