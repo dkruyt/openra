@@ -29,6 +29,7 @@ FROM mono
 
 COPY --from=builder /home/openra/lib/openra /home/openra/lib/openra
 RUN useradd -d /home/openra -m -s /sbin/nologin openra && \
+    mkdir -p /home/openra/.openra && \
     chown -R openra:openra /home/openra
 
 WORKDIR /home/openra/lib/openra
