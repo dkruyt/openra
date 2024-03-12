@@ -73,5 +73,7 @@ All these variables are optional. If you do not provide a value for an environme
 
 Feel free to fork this project, submit PRs or issues, or ask any question about the project.
 
-[1]: <https://ghcr-badge.egpl.dev/dkruyt/openra/latest_tag?trim=major&label=latest>
+
+
+[1]: <https://ghcr-badge.egpl.dev/dkruyt/openra/latest_tag?color=%2344cc11&ignore=20200202&label=version&trim=>
 [2]: <https://ghcr-badge.egpl.dev/dkruyt/openra/size>
