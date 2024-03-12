@@ -6,7 +6,7 @@ This repository contains the Dockerfile and associated resources needed to build
 
 The Dockerfile builds from mono, is optimized for multi-architecture builds, and includes all tools and libraries necessary to run an OpenRA Dedicated Server instance.
 
-## Supported Architectures
+## 🖥️ Supported Architectures
 
 The following system architectures are compiled docker images in the registry:
 
