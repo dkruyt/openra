@@ -6,6 +6,15 @@ This repository contains the Dockerfile and associated resources needed to build
 
 The Dockerfile builds from mono, is optimized for multi-architecture builds, and includes all tools and libraries necessary to run an OpenRA Dedicated Server instance.
 
+## Supported Architectures
+
+The following system architectures are compiled docker images in the registry:
+
+- Linux AMD64
+- Linux ARM64
+- Linux ARM/v7
+- Linux 386
+
 ## 🔄 GitHub Actions
 
 We use GitHub Actions as our CI/CD system to automatically build and push the Docker images when a new version of OpenRA is released.
@@ -21,7 +30,7 @@ To start the OpenRA server, you can use Docker or Docker Compose.
 __Docker:__
 
 ```sh
-docker run -d -p 1234:1234 -v ./openra_data:/home/openra/.openra ghcr.io/dkruyt/openra:latest
+docker run -d -p 1234:1234 -v openra_data:/home/openra/.openra ghcr.io/dkruyt/openra:latest
 ```
 
 Replace `latest` with the version you want to use if not latest.
